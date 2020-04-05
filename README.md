@@ -1,2 +1,21 @@
-# FancyTeamHomePage
-FancyTeamHomePage
+# FancyTeam主页建设
+
+## 项目简介
+
+建设一个FancyTeam的主页，完成以下功能（暂定）：
+
+ - 首页展示FancyTeam的各种综合信息等
+ - 能够在线播放视频课程，或者展示文字课程
+ - 实现登录功能，学员能够在线写作业，提交作业，留言讨论。导师能够在线评分，提出意见。
+
+## 技术栈
+
+ - 前端使用react+react-model
+ - 后端使用fastify
+
+## 服务器配置（未来随需求增加）
+
+ - 2vCPU + 8g内存 + 1M带宽 
+
+## 期待你的参与
+
