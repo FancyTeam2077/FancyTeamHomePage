@@ -78,6 +78,17 @@ typings/
 # Next.js build output
 .next
 
+# testing
+/coverage
+
+# next.js
+/.next/
+/out/
+
+# production
+/build
+
+
 # Nuxt.js build / generate output
 .nuxt
 dist
@@ -102,3 +113,7 @@ dist
 
 # TernJS port file
 .tern-port
+
+# selfReadme
+
+selfREADME.md
