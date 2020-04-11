@@ -1,6 +1,7 @@
 const next = require('next')
 const { parse } = require('url')
 const dev = process.env.NODE_ENV !== 'production'
+const { appName, serverPort } = require('./config')
 const app = next({
   dev,
   quiet: true
@@ -31,7 +32,7 @@ app.prepare().then(() => {
     }
   })
 
-  fastify.listen(3000, function (err, address) {
+  fastify.listen(serverPort, function (err, address) {
     if (err) {
       fastify.log.error(err)
       process.exit(1)
