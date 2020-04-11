@@ -10,8 +10,8 @@ const handle = app.getRequestHandler()
 
 app.prepare().then(() => {
   const fastify = require('fastify')({
-    // 可以开启logger，方便debug
-    logger: true
+    // 可以开启logger,方便debug;关闭logger，主要是因为log刷屏
+    logger: false
   })
 
   // 注册一个fastify插件，起api路由作用
