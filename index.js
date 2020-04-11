@@ -4,7 +4,7 @@ const dev = process.env.NODE_ENV !== 'production'
 const { appName, serverPort } = require('./config')
 const app = next({
   dev,
-  quiet: true
+  quiet: false
 })
 
 const handle = app.getRequestHandler()
@@ -12,7 +12,7 @@ const handle = app.getRequestHandler()
 app.prepare().then(() => {
   const fastify = require('fastify')({
     // 可以开启logger,方便debug;关闭logger，主要是因为log刷屏
-    logger: false
+    logger: true
   })
 
   // 注册一个fastify插件，起api路由作用
