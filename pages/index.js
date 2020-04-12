@@ -1,5 +1,8 @@
 import Head from 'next/head'
-import { DatePicker,Button  } from 'antd';
+import Header from '../components/homepage/Header'
+import Content from '../components/homepage/Content'
+import Footer from '../components/homepage/Footer'
+
 
 const Home = () => (
   <div className="container">
@@ -8,28 +11,18 @@ const Home = () => (
       <link rel="icon" href="/favicon.ico" />
     </Head>
 
-    <main>
-      <DatePicker />
-      <Button type="primary">Primary</Button>
-      <Button>Default</Button>
-      <Button type="dashed">Dashed</Button>
-      <Button type="link">Link</Button>
-    </main>
 
-    <footer>
-      <a
-        href="https://zeit.co?utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app"
-        target="_blank"
-        rel="noopener noreferrer"
-      >
-        Powered by <img src="/zeit.svg" alt="ZEIT Logo" />
-      </a>
-    </footer>
+
+    <Header/>
+    <Content>Content</Content>
+    <Footer>Footer</Footer>
+
+
 
     <style jsx>{`
       .container {
         min-height: 100vh;
-        padding: 0 0.5rem;
+        padding: 0 0.5rem:
         display: flex;
         flex-direction: column;
         justify-content: center;
