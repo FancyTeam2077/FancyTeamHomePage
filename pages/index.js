@@ -7,14 +7,14 @@ import Footer from '../components/homepage/Footer'
 const Home = () => (
   <div className="container">
     <Head>
-      <title>Create Next App</title>
+      <title>fancy everyday</title>
       <link rel="icon" href="/favicon.ico" />
     </Head>
 
 
 
     <Header/>
-    <Content>Content</Content>
+    <Content></Content>
     <Footer>Footer</Footer>
 
 
@@ -157,6 +157,11 @@ const Home = () => (
 
       * {
         box-sizing: border-box;
+      }
+      .ant-tabs-tab {
+        font-size: 16px !important;
+        line-height: 1.2 !important;
+        padding: 25px 45px 25px 45px !important;
       }
     `}</style>
   </div>

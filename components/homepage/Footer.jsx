@@ -6,13 +6,15 @@ function Footer() {
   return (
     <>
       <div className="Footer">
-        Footer
+        
       </div>
       <style jsx>{`
         .Footer {
           display: flex;
           justify-content: center;
           align-items: center;
+          padding: 30px;
+          background-color:#EEEEEE;
         }
       `}</style>
     </>

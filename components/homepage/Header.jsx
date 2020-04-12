@@ -76,6 +76,7 @@ function Header() {
           display: flex;
           justify-content: center;
           align-items: center;
+          border-bottom: 1px solid #B2B2B2
         }
         .ant-menu-item-selected {
           color: #1890ff;

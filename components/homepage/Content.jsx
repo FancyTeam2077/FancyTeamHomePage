@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from "react";
-
+import TabContent from './TabContent'
 
 function Content() {
   const [state, changeState] = useState({
@@ -14,18 +14,22 @@ function Content() {
 
   return (
     <>
-
-      <div className="Content">
-        <div className="wrapper">
-          <div className="bg">
-            <div className="button1 buttonStyle">立即加入</div>
-            <div className="button2 buttonStyle">获取公开课PPT</div>
+      <div className="ContentBG">
+        <div className="Content">
+          <div className="wrapper">
+            <div className="bg">
+              <div className="button1 buttonStyle">立即加入</div>
+              <div className="button2 buttonStyle">获取公开课PPT</div>
+            </div>
           </div>
-        </div>
+        <TabContent />
+      </div>
 
       </div>
       <style jsx>{`
-        
+        .ContentBG{
+          background-color:#EEEEEE
+        }
         .Content {
           max-width: 60.25rem;
           margin: 0 auto;
@@ -34,7 +38,7 @@ function Content() {
           position: relative;
           width: 100%;
           padding-top: 38%;
-          margin: 10px auto;
+          margin: 0px auto;
         }
         .bg{
           background: url(/img/meetandcode_blue.jpg) center center no-repeat;
