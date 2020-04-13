@@ -1,9 +1,12 @@
 const next = require('next')
 const { parse } = require('url')
 const dev = process.env.NODE_ENV !== 'production'
+const { appName, serverPort } = require('./config')
+console.log('dev',process.env.NODE_ENV)
+console.log('dev',dev)
 const app = next({
   dev,
-  quiet: true
+  // quiet: false
 })
 
 const handle = app.getRequestHandler()
@@ -11,7 +14,7 @@ const handle = app.getRequestHandler()
 app.prepare().then(() => {
   const fastify = require('fastify')({
     // 可以开启logger,方便debug;关闭logger，主要是因为log刷屏
-    logger: false
+    logger: true
   })
 
   // 注册一个fastify插件，起api路由作用
@@ -23,7 +26,7 @@ app.prepare().then(() => {
   fastify.use((req, res, next) => {
     const parsedUrl = parse(req.url, true)
     let reqPath = parsedUrl.path
-    console.log('path', parsedUrl.path)
+    // console.log('path', parsedUrl.path)
     if (reqPath.search(/^\/api/) === -1) {
       handle(req, res, parsedUrl)
     } else {
@@ -31,7 +34,7 @@ app.prepare().then(() => {
     }
   })
 
-  fastify.listen(3000, function (err, address) {
+  fastify.listen(serverPort, function (err, address) {
     if (err) {
       fastify.log.error(err)
       process.exit(1)
