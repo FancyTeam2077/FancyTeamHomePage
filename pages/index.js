@@ -3,7 +3,7 @@ import Header from "../components/homepage/Header";
 // import Content from '../components/homepage/Content'
 // import Footer from '../components/homepage/Footer'
 import ReactFullpage from "@fullpage/react-fullpage";
-
+import HomeP from "../components/Home"
 const Home = () => (
   <div className="container">
     <Head>
@@ -11,14 +11,12 @@ const Home = () => (
       <link rel="icon" href="/favicon.ico" />
     </Head>
 
-    {/* <Header/>
-    <Content></Content>
-    <Footer>Footer</Footer> */}
+    <HomeP></HomeP>
 
-    <ReactFullpage
+    {/* <ReactFullpage
       //fullpage options
       licenseKey={"YOUR_KEY_HERE"}
-      scrollingSpeed={1000} /* Options here */
+      scrollingSpeed={1000} 
       render={({ state, fullpageApi }) => {
         return (
           <ReactFullpage.Wrapper>
@@ -100,7 +98,7 @@ const Home = () => (
           </ReactFullpage.Wrapper>
         );
       }}
-    />
+    /> */}
 
     <style jsx>{`
 
