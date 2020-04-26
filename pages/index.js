@@ -1,10 +1,8 @@
-import Head from 'next/head'
-// import Header from '../components/homepage/Header'
+import Head from "next/head";
+import Header from "../components/homepage/Header";
 // import Content from '../components/homepage/Content'
 // import Footer from '../components/homepage/Footer'
-import ReactFullpage from '@fullpage/react-fullpage'
-
-
+import ReactFullpage from "@fullpage/react-fullpage";
 
 const Home = () => (
   <div className="container">
@@ -13,100 +11,96 @@ const Home = () => (
       <link rel="icon" href="/favicon.ico" />
     </Head>
 
-
-
     {/* <Header/>
     <Content></Content>
     <Footer>Footer</Footer> */}
 
     <ReactFullpage
-        //fullpage options
-        licenseKey = {'YOUR_KEY_HERE'}
-        scrollingSpeed = {1000} /* Options here */
-
-        render={({ state, fullpageApi }) => {
-          return (
-            <ReactFullpage.Wrapper>
-              <div className="section bg1">
-                <div className="title1">
-                  <div className="big">
-                    fancy 团队
-                  </div> 
-                  <div className="sub1">
-                    在这里轻松学习前端
-                  </div> 
-                  <div className="subButtonBox">
-                    <div className="button"  onClick={
-                      () => fullpageApi.moveSectionDown()
-                    }>
-                      加入我们
-                    </div>
-                    <div className="button dark" onClick={
-                      () => fullpageApi.moveSectionDown()
-                    }>
-                      详情简介
-                    </div>
-                  </div> 
+      //fullpage options
+      licenseKey={"YOUR_KEY_HERE"}
+      scrollingSpeed={1000} /* Options here */
+      render={({ state, fullpageApi }) => {
+        return (
+          <ReactFullpage.Wrapper>
+            <div className="section bg1">
+              <div className="title1">
+                <div className="big">fancy 团队</div>
+                <div className="sub1">在这里轻松学习前端</div>
+                <div className="subButtonBox">
+                  <div
+                    className="button"
+                    onClick={() => fullpageApi.moveSectionDown()}
+                  >
+                    加入我们
+                  </div>
+                  <div
+                    className="button dark"
+                    onClick={() => fullpageApi.moveSectionDown()}
+                  >
+                    详情简介
+                  </div>
                 </div>
               </div>
-              <div className="section bg2">
-                <div className="title2 middle">
-                  <p>有的人自学JS、HTML、CSS，小有成就但心里总觉得空虚；</p>
-                  <p>有的人上前端培训班，基础平平但心里总觉得寂寞；</p>
-                  <p>有的人混迹在各大前端论坛，寻寻觅觅；</p>
+            </div>
+            <div className="section bg2">
+              <div className="title2 middle">
+                <p>有的人自学JS、HTML、CSS，小有成就但心里总觉得空虚；</p>
+                <p>有的人上前端培训班，基础平平但心里总觉得寂寞；</p>
+                <p>有的人混迹在各大前端论坛，寻寻觅觅；</p>
 
-                  <p>但心里总觉得没有方向感。</p>
+                <p>但心里总觉得没有方向感。</p>
 
-                  <p>你需要一个引路人，需要一个心灵的导师。别慌！这里是字节前端学院。</p>
+                <p>
+                  你需要一个引路人，需要一个心灵的导师。别慌！这里是字节前端学院。
+                </p>
 
-                  <p>
+                <p>
                   字节前端学院由Fancy社团和字节跳动合办，面向在校大学生，为培养最优秀最有潜力的前端人才举办的前端技术系列课程。
-                  </p>
-                </div>
+                </p>
               </div>
-              <div className="section bg3">
-                <div className="">
-                  <div className="title3 big">
-                    课程简介
+            </div>
+            <div className="section bg3">
+              <div className="">
+                <div className="title3 big">课程简介</div>
+                <div className="box2">
+                  <div className="card">
+                    <div className="itemImg1"></div>
+                    <div className="text">
+                      从零开始，66天，带你一起体验前端之美。零基础班帮你建立学习的习惯与方法。
+                    </div>
                   </div>
-                  <div className="box2">
-                    <div className="card">
-                      <div className="itemImg1">
-                      </div>
-                      <div className="text">
-                        从零开始，66天，带你一起体验前端之美。零基础班帮你建立学习的习惯与方法。
-                      </div>
-                    </div> 
-                    <div className="card">
-                      <div className="itemImg2">
-                      </div>
-                      <div className="text">
+                  <div className="card">
+                    <div className="itemImg2"></div>
+                    <div className="text">
                       基于自研的MVVM框架-XXX，由十多位同学通力打造，由浅入深，帮助你掌握目前主流的前端开发模式。
-                      </div>
-                    </div> 
-                    <div className="card">
-                      <div className="itemImg3">
-                      </div>
-                      <div className="text">
-                      你是否知道我们可以利用纯 CSS 制作一些很酷的动画效果？设计师学院，作者是任职于百度 Echarts 团队的前端工程师兼设计师，历经两个月，从设计到实现，一步步从零开始带你了解学习 CSS 前端动效。无论是复杂的动效细节还是最新的解决方案，在这里都能学习。
-                      </div>
-                    </div> 
+                    </div>
                   </div>
-
+                  <div className="card">
+                    <div className="itemImg3"></div>
+                    <div className="text">
+                      你是否知道我们可以利用纯 CSS
+                      制作一些很酷的动画效果？设计师学院，作者是任职于百度
+                      Echarts
+                      团队的前端工程师兼设计师，历经两个月，从设计到实现，一步步从零开始带你了解学习
+                      CSS
+                      前端动效。无论是复杂的动效细节还是最新的解决方案，在这里都能学习。
+                    </div>
+                  </div>
                 </div>
               </div>
-              <div className="section bg4">
-                <div className="title1">
-                  <div className="big">
-                    来吧！
-                  </div> 
- 
-                </div>
+            </div>
+            <div className="section bg4">
+              <div className="title1">
+                <div className="big">来吧！</div>
               </div>
-            </ReactFullpage.Wrapper>
-          );
-        }}
-      />
+            </div>
+            <div className="section">
+              <Header></Header>
+            </div>
+          </ReactFullpage.Wrapper>
+        );
+      }}
+    />
 
     <style jsx>{`
 
@@ -384,13 +378,8 @@ const Home = () => (
       * {
         box-sizing: border-box;
       }
-      .ant-tabs-tab {
-        font-size: 16px !important;
-        line-height: 1.2 !important;
-        padding: 25px 45px 25px 45px !important;
-      }
     `}</style>
   </div>
-)
+);
 
-export default Home
+export default Home;
