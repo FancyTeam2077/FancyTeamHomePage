@@ -347,13 +347,13 @@ export const Content30DataSource = {
     children: [
       {
         name: 'title',
-        children: 'Fancy提供专业的课程',
+        children: 'Fancy提供专业的XXX',
         className: 'title-h1',
       },
       {
         name: 'content',
         className: 'title-content',
-        children: '基于字节强大的人才资源',
+        children: '基于XXXXXXXX',
       },
     ],
   },
@@ -372,11 +372,11 @@ export const Content30DataSource = {
               'https://zos.alipayobjects.com/rmsportal/ScHBSdwpTkAHZkJ.png',
           },
           textWrapper: { className: 'content3-text' },
-          title: { className: 'content3-title', children: '企业资源管理' },
+          title: { className: 'content3-title', children: '待补充' },
           content: {
             className: 'content3-content',
             children:
-              '云资源集中编排、弹性伸缩、持续发布和部署，高可用及容灾。',
+              '待补充',
           },
         },
       },
@@ -392,11 +392,11 @@ export const Content30DataSource = {
               'https://zos.alipayobjects.com/rmsportal/NKBELAOuuKbofDD.png',
           },
           textWrapper: { className: 'content3-text' },
-          title: { className: 'content3-title', children: '云安全' },
+          title: { className: 'content3-title', children: '待补充' },
           content: {
             className: 'content3-content',
             children:
-              '按金融企业安全要求打造的完整云上安全体系，全方位保障金融应用及数据安全。',
+              '待补充',
           },
         },
       },
@@ -412,11 +412,11 @@ export const Content30DataSource = {
               'https://zos.alipayobjects.com/rmsportal/xMSBjgxBhKfyMWX.png',
           },
           textWrapper: { className: 'content3-text' },
-          title: { className: 'content3-title', children: '云监控' },
+          title: { className: 'content3-title', children: '待补充' },
           content: {
             className: 'content3-content',
             children:
-              '分布式云环境集中监控，统一资源及应用状态视图，智能分析及故障定位。',
+              '待补充',
           },
         },
       },
@@ -432,11 +432,11 @@ export const Content30DataSource = {
               'https://zos.alipayobjects.com/rmsportal/MNdlBNhmDBLuzqp.png',
           },
           textWrapper: { className: 'content3-text' },
-          title: { className: 'content3-title', children: '移动' },
+          title: { className: 'content3-title', children: '待补充' },
           content: {
             className: 'content3-content',
             children:
-              '一站式移动金融APP开发及全面监控；丰富可用组件，动态发布和故障热修复。',
+              '待补充',
           },
         },
       },
@@ -452,11 +452,11 @@ export const Content30DataSource = {
               'https://zos.alipayobjects.com/rmsportal/UsUmoBRyLvkIQeO.png',
           },
           textWrapper: { className: 'content3-text' },
-          title: { className: 'content3-title', children: '分布式中间件' },
+          title: { className: 'content3-title', children: '待补充' },
           content: {
             className: 'content3-content',
             children:
-              '金融级联机交易处理中间件，大规模分布式计算机，数万笔/秒级并发能力，严格保证交易数据统一性。',
+              '待补充',
           },
         },
       },
@@ -472,11 +472,11 @@ export const Content30DataSource = {
               'https://zos.alipayobjects.com/rmsportal/ipwaQLBLflRfUrg.png',
           },
           textWrapper: { className: 'content3-text' },
-          title: { className: 'content3-title', children: '大数据' },
+          title: { className: 'content3-title', children: '待补充' },
           content: {
             className: 'content3-content',
             children:
-              '一站式、全周期大数据协同工作平台，PB级数据处理、毫秒级数据分析工具。',
+              '待补充',
           },
         },
       },
@@ -505,7 +505,7 @@ export const Footer10DataSource = {
           children: [
             {
               name: 'content0',
-              children: 'Animation specification and components of Ant Design.',
+              children: '',
             },
           ],
         },
@@ -518,7 +518,7 @@ export const Footer10DataSource = {
         title: { children: '产品' },
         childWrapper: {
           children: [
-            { name: 'link0', href: '#', children: '产品更新记录' },
+            { name: 'link0', href: '#', children: '更新记录' },
             { name: 'link1', href: '#', children: 'API文档' },
             { name: 'link2', href: '#', children: '快速入门' },
             { name: 'link3', href: '#', children: '参考指南' },
@@ -546,8 +546,8 @@ export const Footer10DataSource = {
         title: { children: '资源' },
         childWrapper: {
           children: [
-            { href: '#', name: 'link0', children: 'Ant Design' },
-            { href: '#', name: 'link1', children: 'Ant Motion' },
+            { href: '#', name: 'link0', children: 'Fancy' },
+            { href: '#', name: 'link1', children: 'Fancy' },
           ],
         },
       },
@@ -559,7 +559,7 @@ export const Footer10DataSource = {
     className: 'copyright',
     children: (
       <span>
-        ©2018 by <a href="https://motion.ant.design">Ant Motion</a> All Rights
+        ©2020 by <a href="#">Fancy</a> All Rights
         Reserved
       </span>
     ),
